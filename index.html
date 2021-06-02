@@ -9,20 +9,29 @@
   <title>OpenLayers example</title>
 </head>
 
-<body >
+<body>
   <div class="container">
     <div class="row">
       <div class="col-lg-4">1</div>
       <div class="col-lg-4">
-        
-        
+        <br /><br />
+        <form name="registerForm" id="registerForm" action="" method="POST" onSubmit="return register()">
+          <labe class="label-control" "for=" fullname">full name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="full name" required class="form-control" />
+
+            <input type="email" name="email" id="email" placeholder="email" required class="form-control" />
+
+            <input type="password" name="password" id="password" placeholder="password" required class="form-control" />
+
+            <input type="submit" form="registerForm" value="register" class="btn btn-primary" />
+        </form>
       </div>
       <div class="col-lg-4">3</div>
     </div>
   </div>
 
-      <script src="./js/bootstrap.js"></script>
-    <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
